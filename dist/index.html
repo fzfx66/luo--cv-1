@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    /*注意更改meta，加五个值，不然手机不能响应媒体查询*/
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>luo Curriculum Vitae</title>
+</head>
+<body>
+    <div id="html"></div>
+    <style id="style"></style>
+    <div id="div1wrapper">
+        <div id="div1"></div>
+    </div>
+
+    <style>* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:before, :after {
+  box-sizing: border-box;
+}
+
+#html {
+  word-break: break-all;
+}
+
+#div1 {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#div1:before, #div1:after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@media (max-width: 500px) {
+  #html {
+    height: 50vh;
+    overflow: auto;
+  }
+
+  #div1wrapper {
+    height: 50vh;
+  }
+
+  #div1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+</style>
+    <script src="/index.de158e3a.js"></script>
+</body>
+</html>
